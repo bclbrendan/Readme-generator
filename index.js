@@ -5,16 +5,35 @@ const generateMarkdown = require("./utils/generateMarkdown");
 
 // array of questions for user
 const questions = [
-    {
-        type: 'input',
-        name: 'filename',
-        message: "what is the file name",
-        },
+
         {
         type: 'input',
         name: 'title',
         message: "what is the Title",
         },
+        {
+        type: 'input',
+        name: 'description',
+        message: "what is the description",
+        },
+        {
+        type: 'input',
+        name: 'installation',
+        message: "what is the installation instructions",
+        },
+        {
+        type: 'input',
+        name: 'usage',
+        message: "What is the usage of this application",
+        },
+        // * Description 
+        // * Table of Contents 
+        // * Installation 
+        // * Usage 
+        // * License 
+        // * Contributing 
+        // * Tests (instructions)
+        // * Questions (github username and email entered)
 ];
 
 // function to write README file
@@ -30,7 +49,7 @@ function writeToFile(fileName, data) {
 function init() {
 
     inquirer.prompt(questions)
-    .then((answers) => writeToFile('RobotReadme.md', answers))
+    .then((answers) => writeToFile(answers.title+".md", answers))
     .then(() => console.log('Successfully wrote to readme'))
     .catch((err) => console.error(err));
 }
