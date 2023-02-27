@@ -52,14 +52,7 @@ const questions = [
           message: "What is your email?",
           },
 
-        // * Description 
-        // * Table of Contents 
-        // * Installation 
-        // * Usage 
-        // * License 
-        // * Contributing 
-        // * Tests (instructions)
-        // * Questions (github username and email entered)
+
 ];
 
 // function to write README file
