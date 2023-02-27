@@ -26,6 +26,32 @@ const questions = [
         name: 'usage',
         message: "What is the usage of this application",
         },
+        {
+          type: 'input',
+          name: 'license',
+          message: "What is the license of this application? /n a) MIT b) default",
+        },
+        {
+          type: 'input',
+          name: 'contribution',
+          message: "Who has contributed to this?",
+        },
+        {
+          type: 'input',
+          name: 'test',
+          message: "What are the instructions to test this application?",
+          },
+        {
+            type: 'input',
+            name: 'github_name',
+            message: "What is your github username?",
+        },
+        {
+          type: 'input',
+          name: 'email',
+          message: "What is your email?",
+          },
+
         // * Description 
         // * Table of Contents 
         // * Installation 
