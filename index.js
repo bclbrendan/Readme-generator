@@ -29,7 +29,7 @@ const questions = [
         {
           type: 'input',
           name: 'license',
-          message: "What is the license of this application? /n a) MIT b) default",
+          message: "What is the license of this application? a) MIT b) None",
         },
         {
           type: 'input',

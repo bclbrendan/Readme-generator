@@ -2,17 +2,18 @@
 function generateMarkdown(data) {
   
   return `# **${data.title}**
-  # **Table of Contents**
-1. [Description](#Description)
-2. [Installation](#Installation)
-3. [Usage cases](#Usage)
-3. [License](#License)
-3. [Contributors](#Contributors)
-3. [Testing](#Testing)
-3. [Questions](#Questions?)
-  ## Description 
+  ## **Table of Contents**
+  - [Description](#description)
+  - [Installation instructions](#installation-instructions)
+  - [Usage cases](#usage-cases)
+  - [**License**](#license)
+  - [Contributors](#contributors)
+  - [Testing](#testing)
+  - [Questions?](#questions)
+
+  ## Description
   ${data.description}
-  ## Installation instructions 
+  ## Installation instructions
   ${data.installation}
   ## Usage cases
   ${data.usage}
